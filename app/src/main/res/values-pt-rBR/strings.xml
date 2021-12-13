@@ -6,4 +6,5 @@
     <string name="open_new_screen">Abrir Nova Tela</string>
     <string name="back">Voltar</string>
     <string name="type_valid_name">Digite um nome válido.</string>
+    <string name="updated_successfully">Atualizado com sucesso</string>
 </resources>

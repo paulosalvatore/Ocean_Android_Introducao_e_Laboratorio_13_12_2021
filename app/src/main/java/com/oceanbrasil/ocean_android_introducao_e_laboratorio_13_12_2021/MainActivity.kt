@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +34,8 @@ class MainActivity : AppCompatActivity() {
                 // Alteramos o texto do tvResultado para o valor que está armazenado na
                 // variável 'nome'
                 tvResultado.text = nome
+
+                Toast.makeText(this, R.string.updated_successfully, Toast.LENGTH_LONG).show()
             }
         }
 
