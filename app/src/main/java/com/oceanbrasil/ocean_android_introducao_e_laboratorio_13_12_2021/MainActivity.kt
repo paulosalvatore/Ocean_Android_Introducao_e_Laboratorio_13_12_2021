@@ -38,8 +38,16 @@ class MainActivity : AppCompatActivity() {
 
         // Detectar clique no botão btAbrirTela
         btAbrirTela.setOnClickListener {
+            // Criamos uma intenção de abrir a tela ResultadoActivity
             val abrirTelaIntent = Intent(this, ResultadoActivity::class.java)
 
+            // Adicionamos uma informação à Intent que abre a nova tela
+            val name = "NOME_DIGITADO"
+            val value = etNome.text
+
+            abrirTelaIntent.putExtra(name, value)
+
+            // Registramos a intenção no Android
             startActivity(abrirTelaIntent)
         }
     }
