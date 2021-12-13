@@ -1,5 +1,6 @@
 package com.oceanbrasil.ocean_android_introducao_e_laboratorio_13_12_2021
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val tvResultado = findViewById<TextView>(R.id.tvResultado)
         val btEnviar = findViewById<Button>(R.id.btEnviar)
         val etNome = findViewById<EditText>(R.id.etNome)
+        val btAbrirTela = findViewById<Button>(R.id.btAbrirTela)
 
         // Declaramos um ouvinte para eventos de clique no btEnviar
         // Assim que um clique no btEnviar ocorrer, o código dentro
@@ -32,6 +34,13 @@ class MainActivity : AppCompatActivity() {
                 // variável 'nome'
                 tvResultado.text = nome
             }
+        }
+
+        // Detectar clique no botão btAbrirTela
+        btAbrirTela.setOnClickListener {
+            val abrirTelaIntent = Intent(this, ResultadoActivity::class.java)
+
+            startActivity(abrirTelaIntent)
         }
     }
 }
