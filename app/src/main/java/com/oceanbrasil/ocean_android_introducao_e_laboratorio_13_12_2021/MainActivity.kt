@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             // Caso o nome esteja em branco, entra no if
             if (nome.isBlank()) {
                 // Exibe uma mensagem de erro no EditText
-                etNome.error = "Digite um nome válido."
+                etNome.error = getString(R.string.type_valid_name)
             } else {
                 // Alteramos o texto do tvResultado para o valor que está armazenado na
                 // variável 'nome'

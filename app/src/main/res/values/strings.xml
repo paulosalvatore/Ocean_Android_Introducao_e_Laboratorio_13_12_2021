@@ -4,4 +4,5 @@
     <string name="type_your_name">Type your name...</string>
     <string name="open_new_screen">Open New Screen</string>
     <string name="back">Back</string>
+    <string name="type_valid_name">Type a valid name.</string>
 </resources>

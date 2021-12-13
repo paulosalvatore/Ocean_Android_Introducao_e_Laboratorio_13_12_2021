@@ -5,4 +5,5 @@
     <string name="type_your_name">Digite o seu nome...</string>
     <string name="open_new_screen">Abrir Nova Tela</string>
     <string name="back">Voltar</string>
+    <string name="type_valid_name">Digite um nome válido.</string>
 </resources>
