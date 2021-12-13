@@ -23,9 +23,15 @@ class MainActivity : AppCompatActivity() {
             // Pegamos o que foi digitado no EditText
             val nome = etNome.text
 
-            // Alteramos o texto do tvResultado para o valor que está armazenado na
-            // variável 'nome'
-            tvResultado.text = nome
+            // Caso o nome esteja em branco, entra no if
+            if (nome.isBlank()) {
+                // Exibe uma mensagem de erro no EditText
+                etNome.error = "Digite um nome válido."
+            } else {
+                // Alteramos o texto do tvResultado para o valor que está armazenado na
+                // variável 'nome'
+                tvResultado.text = nome
+            }
         }
     }
 }
