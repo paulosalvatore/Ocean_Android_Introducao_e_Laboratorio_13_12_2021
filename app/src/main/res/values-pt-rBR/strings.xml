@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ocean_Android_Introducao_e_Laboratorio_13_12_2021</string>
+    <string name="send">Enviar</string>
+    <string name="type_your_name">Digite o seu nome...</string>
+    <string name="open_new_screen">Abrir Nova Tela</string>
+    <string name="back">Voltar</string>
+</resources>
